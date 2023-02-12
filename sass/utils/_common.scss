@@ -5,6 +5,7 @@ body {
   font-family: $content-font;
   font-size: 14px;
   letter-spacing: 0.03em;
+  font-weight: 400;
 }
 img {
   display: block;
@@ -12,16 +13,21 @@ img {
   height: auto;
 }
 p,
+h1,
 h2,
 h3 {
   margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
+
 .section__title {
+  text-align: center;
+  font-family: $title-font;
   color: $secondary-text-color;
-  @include textstyle(1.18, 28px, 700);
-  @media screen and (min-width: $desktop) {
-    @include textstyle(1.2, 36px, 700);
-  }
+  @include textstyle(1.25, 36px, 700);
+  text-transform: uppercase;
+  margin-bottom: 50px;
 }
 .link-unstyled {
   text-decoration: none;

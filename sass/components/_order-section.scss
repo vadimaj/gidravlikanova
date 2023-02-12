@@ -1,0 +1,33 @@
+.order {
+  padding: 94px 0;
+}
+.order__list {
+  @extend %list-unstyled;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  text-align: center;
+}
+.order__item {
+  position: relative;
+  //   outline: 1px dashed red;
+  flex-basis: calc((100% - 90px) / 4);
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.order__thumb {
+  margin-bottom: 50px;
+}
+.order__text {
+  text-align: center;
+  font-weight: 400;
+  line-height: 1.38;
+}
+.order__arrowIcon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(100%, 35%);
+}

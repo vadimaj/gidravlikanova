@@ -1,0 +1,44 @@
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.name {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
+
+.approach-icon {
+  width: 1.474609375em;
+}
+
+.madeinUA-icon {
+  width: 0.8935546875em;
+}
+
+.professional-icon {
+  width: 0.9765625em;
+}
+
+.punnctual-icon {
+  width: 1.7373046875em;
+}
+
+.valve {
+  width: 1.0146484375em;
+}
+
+.mail {
+  width: 1.3330078125em;
+}
+
+.phone-icon {
+  width: 0.6318359375em;
+}

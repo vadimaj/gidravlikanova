@@ -12,52 +12,69 @@
     <header class="header">
       <div class="container">
         <nav class="main-nav">
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
+          <div class="logo">
+            <a href="index.html">
+              <svg class="main-nav__logo" width="80" height="40">
+                <use href="./images/icons/symbol-defs.svg#logo-main"></use>
+              </svg>
+            </a>
+          </div>
+          <ul class="site-nav">
+            <li class="site-nav__item">
+              <a
+                class="site-nav__link link-unstyled site-nav__link--current"
+                href="#products"
+                >Продукція</a
+              >
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link link-unstyled" href="#how-to-choose"
+                >Підібрати гідростанцію</a
+              >
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link link-unstyled" href="#features"
+                >Характеристики</a
+              >
+            </li>
           </ul>
+
           <ul class="contacts-nav">
             <li class="contacts-nav__item">
               <a
                 class="contacts-nav__link link-unstyled"
-                href="mailto:info@devstudio.com"
+                href="mailto:gidravlikanova@gmail.com"
               >
-                <svg class="contacts-nav__icon" width="16" height="12">
-                  <use href="./images/icons/symbol-defs.svg#envelope"></use>
+                <svg class="contacts-nav__icon" width="20" height="14">
+                  <use href="./images/icons/symbol-defs.svg#mail"></use>
                 </svg>
-                info@devstudio.com</a
+                gidravlikanova@gmail.com</a
               >
             </li>
             <li class="contacts-nav__item">
               <a
                 class="contacts-nav__link link-unstyled"
-                href="tel:+380961111111"
+                href="tel:(066) 639 639 7"
               >
-                <svg class="contacts-nav__icon" width="10" height="16">
-                  <use href="./images/icons/symbol-defs.svg#smartphone"></use>
+                <svg class="contacts-nav__icon" width="12" height="18">
+                  <use href="./images/icons/symbol-defs.svg#phone-icon"></use>
                 </svg>
-                +38 096 111 11 11</a
+                (066) 639 639 7</a
               >
             </li>
           </ul>
         </nav>
       </div>
     </header>
+
     <main>
       <!-- Hero section   -->
-
-      <div class="overlay">
+      <div class="hero-overlay">
         <section class="hero">
           <div class="container">
-            <h1 class="hero__title">Міні гідростанції серії СГМ</h1>
-            <button
-              class="btn primary-btn hero__btn"
-              type="button"
-              data-modal-open
-            >
-              Детальніше
-            </button>
+            <h1 class="hero-title">Міні гідростанції серії СГМ</h1>
+            <h3 class="hero__subtitle">Надійна гідравліка з 2002 року.</h3>
+            <button class="hero-button" type="button">Детальніше</button>
           </div>
         </section>
       </div>
@@ -69,42 +86,350 @@
           <h2 class="section__title benefits__title visually-hidden">
             Наші переваги
           </h2>
+          <ul class="benefits__list">
+            <li class="benefits__item">
+              <div class="benefits__thumb">
+                <svg width="70" height="70">
+                  <use
+                    href="./images/icons/symbol-defs.svg#madeinUA-icon"
+                  ></use>
+                </svg>
+              </div>
+              <h3 class="benefits__subtitle">Вироблено в Україні</h3>
+              <p class="benefits__text">
+                Гідравлічні міні гідростанції СГМ є власною розробкою, мають
+                оригінальну конструкцію та дизайн та виготовляються з 2002р.
+              </p>
+            </li>
+            <li class="benefits__item">
+              <div class="benefits__thumb">
+                <svg width="70" height="70">
+                  <use
+                    href="./images/icons/symbol-defs.svg#professional-icon"
+                  ></use>
+                </svg>
+              </div>
+              <h3 class="benefits__subtitle">Професійність</h3>
+              <p class="benefits__text">
+                Наші спеціалісти мають значний досвід у конструюванні та
+                виготовленні насосних установок, розробці гідросхем. Надаємо
+                консультації для клієнтів.
+              </p>
+            </li>
+            <li class="benefits__item">
+              <div class="benefits__thumb">
+                <svg width="70" height="70">
+                  <use
+                    href="./images/icons/symbol-defs.svg#approach-icon"
+                  ></use>
+                </svg>
+              </div>
+              <h3 class="benefits__subtitle">ІНДИВІДУАЛЬНИЙ ПІДХІД</h3>
+              <p class="benefits__text">
+                Розробка оптимальної гідравлічної схеми, підбір аппаратури і
+                двигуна, а також виконання міні гідростанції (горизонтальне або
+                вертикальне).
+              </p>
+            </li>
+            <li class="benefits__item">
+              <div class="benefits__thumb">
+                <svg width="70" height="70">
+                  <use
+                    href="./images/icons/symbol-defs.svg#punnctual-icon"
+                  ></use>
+                </svg>
+              </div>
+              <h3 class="benefits__subtitle">ПУНКТУАЛЬНІСТЬ</h3>
+              <p class="benefits__text">
+                Завдячуючі блоковій конструкції виготовлення гідростанцій
+                відбувається в стислий термін.
+              </p>
+            </li>
+          </ul>
         </div>
       </section>
 
       <!-- Products section   -->
 
-      <section class="products section">
+      <section class="products section" id="products">
         <div class="container">
           <h2 class="section__title products__title">Наша продукція</h2>
+          <ul class="products__list">
+            <li class="products__item">
+              <div class="products__img">
+                <img
+                  srcset=""
+                  src="./images/products/products-ac.jpg"
+                  alt=""
+                  width="373"
+                  height="300"
+                />
+                <h3 class="products__subtitle">
+                  гідростанції з двигуном змінного струму
+                </h3>
+              </div>
+              <p class="products__text">
+                Класичне виконання міні-гідростанцій з трьохфазним (380В) або
+                однофазним (220В) двигуном змінного струму (AC). Можливе
+                комплектування двохшвидкісними двигунами.
+              </p>
+            </li>
+            <li class="products__item">
+              <div class="products__img">
+                <img
+                  srcset=""
+                  src="./images/products/products-dc.jpg"
+                  alt=""
+                  width="373"
+                  height="300"
+                />
+                <h3 class="products__subtitle">
+                  гідростанції з двигуном постійного струму
+                </h3>
+              </div>
+              <p class="products__text">
+                Основна перевага гідростанцій з двигуном постійного струму (DC)
+                - мобільність. Станції працюють від аккумулятора (12 або 24В) в
+                місцях відсутності дротової мережі живлення: автотранспорт,
+                мобільні пересувні гідрофіковані підьйомні пристрої тощо.
+              </p>
+            </li>
+            <li class="products__item">
+              <div class="products__img">
+                <img
+                  srcset=""
+                  src="./images/products/products-agregat.jpg"
+                  alt=""
+                  width="373"
+                  height="300"
+                />
+                <h3 class="products__subtitle">
+                  Малогабаритні насосні агрегати
+                </h3>
+              </div>
+              <p class="products__text">
+                Малогабаритні гідравлічні насосні агрегати використовуються як
+                енергетичний модуль. Вони складаються з приводного
+                електродвигуна, шестерневого гідронасоса, запобіжного клапана,
+                та муфти.
+              </p>
+            </li>
+          </ul>
         </div>
       </section>
 
       <!-- Features Section   -->
 
-      <section class="features section">
+      <section class="features section" id="features">
         <div class="container">
           <h2 class="section__title features__title">
             Технічні характеристики
           </h2>
+
+          <ul class="features__list">
+            <li class="features__item features__item_left">
+              <div class="features__thumb">
+                <svg width="70" height="70">
+                  <use href="./images/icons/symbol-defs.svg#valve"></use>
+                </svg>
+              </div>
+              <div class="features__textcontent">
+                <h3 class="features__subtitle">Гідроаппаратура:</h3>
+                <p class="features__text">
+                  На гідростанції встановлюються клапани, розподільники,
+                  дросселі та ін. аппаратура модульного монтажу.
+                </p>
+              </div>
+            </li>
+            <li class="features__item features__item_right">
+              <div class="features__textcontent features__textcontent_right">
+                <h3 class="features__subtitle">Електродвигун:</h3>
+                <p class="features__text">
+                  Однофазний (220В) або трьохфазний (380В); постійного струму
+                  (12 або 24В); Потужність від 0,25 до 3 кВт.
+                </p>
+              </div>
+              <div class="features__thumb">
+                <svg width="70" height="70">
+                  <use href="./images/icons/symbol-defs.svg#motor"></use>
+                </svg>
+              </div>
+            </li>
+            <li class="features__item features__item_left">
+              <div class="features__thumb">
+                <svg width="70" height="70">
+                  <use href="./images/icons/symbol-defs.svg#pump"></use>
+                </svg>
+              </div>
+              <div class="features__textcontent">
+                <h3 class="features__subtitle">Гідравлічний насос:</h3>
+                <p class="features__text">
+                  Гідронасос вбудований в бак, забезпечує продуктивність
+                  гідростанції 0,2...10 л/хв. Діапазон робочого тиску становить
+                  6,3...25МПа.
+                </p>
+              </div>
+            </li>
+
+            <li class="features__item features__item_right">
+              <div class="features__textcontent features__textcontent_right">
+                <h3 class="features__subtitle">Бак для масла:</h3>
+                <p class="features__text">
+                  Стальний бак має ємність від 2 до 14 літрів. На баці
+                  встановлено заливну горловину з повітряним фільтром та зливну
+                  пробку.
+                </p>
+              </div>
+              <div class="features__thumb">
+                <svg width="70" height="70">
+                  <use href="./images/icons/symbol-defs.svg#tank"></use>
+                </svg>
+              </div>
+            </li>
+          </ul>
+          <img
+            class="features__img"
+            srcset=""
+            src="./images/features/features-image.jpg"
+            alt=""
+            width="300"
+          />
         </div>
       </section>
 
       <!-- How to choose Section -->
 
-      <section class="choose section">
+      <section class="choose section" id="how-to-choose">
         <div class="container">
-          <h2 class="clients__title section__title">
+          <h2 class="choose__title section__title">
             Як підібрати гідростанцію
           </h2>
+          <h3 class="choose__subtitle">
+            Для правильного вибору гідростанції при замовленні необхідно вказати
+            такі вихідні данні:
+          </h3>
+          <ul class="choose__list">
+            <li class="choose__item">
+              <div class="choose__plus-icon">
+                <div>+</div>
+              </div>
+              <p class="choose__item-text">Швидкість руху поршня</p>
+            </li>
+
+            <li class="choose__item">
+              <div class="choose__plus-icon">
+                <div>+</div>
+              </div>
+              <p class="choose__item-text">Час робочого ходу штока</p>
+            </li>
+
+            <li class="choose__item">
+              <div class="choose__plus-icon">
+                <div>+</div>
+              </div>
+              <p class="choose__item-text">Хід гідроциліндра</p>
+            </li>
+
+            <li class="choose__item">
+              <div class="choose__plus-icon">
+                <div>+</div>
+              </div>
+              <p class="choose__item-text">Зусилля на штоці гідроциліндра</p>
+            </li>
+
+            <li class="choose__item">
+              <div class="choose__plus-icon">
+                <div>+</div>
+              </div>
+              <p class="choose__item-text">Гідравлічна схема</p>
+            </li>
+
+            <li class="choose__item">
+              <div class="choose__plus-icon">
+                <div>+</div>
+              </div>
+              <p class="choose__item-text">Напруга живлення двигуна</p>
+            </li>
+
+            <li class="choose__item">
+              <div class="choose__plus-icon">
+                <div>+</div>
+              </div>
+              <p class="choose__item-text">Режим роботи гідростанції</p>
+            </li>
+          </ul>
         </div>
       </section>
 
-      <!-- How to order Section -->
+      <!-- Order Section -->
 
       <section class="order section">
         <div class="container">
           <h2 class="clients__title section__title">Як оформити замовлення</h2>
+          <ul class="order__list">
+            <li class="order__item">
+              <div class="order__thumb">
+                <svg width="70" height="70">
+                  <use
+                    href="./images/icons/symbol-defs.svg#characteristics"
+                  ></use>
+                </svg>
+              </div>
+              <div class="order__arrowIcon">
+                <svg width="20" height="40">
+                  <use href="./images/icons/symbol-defs.svg#arrow"></use>
+                </svg>
+              </div>
+              <p class="order__text">
+                Узгоджуємо технічні характеристики за телефоном або email.
+              </p>
+            </li>
+            <li class="order__item">
+              <div class="order__thumb">
+                <svg width="70" height="70">
+                  <use href="./images/icons/symbol-defs.svg#orderconfirm"></use>
+                </svg>
+              </div>
+              <div class="order__arrowIcon">
+                <svg width="20" height="40">
+                  <use href="./images/icons/symbol-defs.svg#arrow"></use>
+                </svg>
+              </div>
+              <p class="order__text">
+                Підтверджуємо замовлення. Можлива 50% предоплата вартості
+                гідростанції.
+              </p>
+            </li>
+            <li class="order__item">
+              <div class="order__thumb">
+                <svg width="70" height="70">
+                  <use href="./images/icons/symbol-defs.svg#orderpay"></use>
+                </svg>
+              </div>
+              <div class="order__arrowIcon">
+                <svg width="20" height="40">
+                  <use href="./images/icons/symbol-defs.svg#arrow"></use>
+                </svg>
+              </div>
+              <p class="order__text">
+                Здійснення повної оплати відбувається по готовності
+                гідростанції.
+              </p>
+            </li>
+            <li class="order__item">
+              <div class="order__thumb">
+                <svg width="70" height="70">
+                  <use
+                    href="./images/icons/symbol-defs.svg#orderdelivery"
+                  ></use>
+                </svg>
+              </div>
+
+              <p class="order__text">
+                Доставка гідростанції здійснюється транспортними компаніями.
+              </p>
+            </li>
+          </ul>
         </div>
       </section>
     </main>
@@ -112,7 +437,17 @@
     <!-- Footer   -->
 
     <footer class="page-footer">
-      <div class="container"></div>
+      <div class="container">
+        <p class="page-footer__text">
+          gidravlikanova@gmail.com | 25031 м.Кропивницький вул. Волкова 13Б ©
+          2023 ГідравлікаНова. Всі права захищено. Створення сайту: vdmj
+        </p>
+        <div>
+          <svg class="page-footer__logo" width="150" height="75">
+            <use href="./images/icons/symbol-defs.svg#logo-footer"></use>
+          </svg>
+        </div>
+      </div>
     </footer>
 
     <!--  Modal window   -->
