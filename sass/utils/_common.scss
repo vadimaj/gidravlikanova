@@ -1,4 +1,7 @@
 @import "./mixins";
+html {
+  scroll-behavior: smooth;
+}
 body {
   color: $primary-text-color;
   background-color: $primary-white-color;
